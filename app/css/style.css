@@ -195,7 +195,7 @@ body{
     }
 
     .navigation ul li:nth-child(4).active ~ .indicator{
-        transform: translateX(calc(172.5px * 3));
+        transform: translateX(calc(172.2px * 3));
     }
 
     /* navigation - end */
