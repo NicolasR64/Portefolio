@@ -9,6 +9,7 @@
     --primary-color: #2a2c35;
     --secondary-color: #222327;
     --third-color: #FFFFFF;
+    --nav-active-color: #3031356c;
     --nav-li-width: 25%;
 }
 
@@ -22,6 +23,10 @@ body{
     position: fixed;
     bottom: 0px;
     width: 100%;
+}
+
+.menuDropdown{
+    display: none!important;
 }
 
 .navigation{
@@ -202,7 +207,55 @@ body{
 }
 
 @media screen and (min-width: 800px) {
+    /* navigation - begin */
+
     .tabbar{
         display: none;
     }
+
+    .menuDropdown{
+        display: flex!important;
+    }
+
+    .nav-brand, .nav-profile{
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-brand img, .nav-profile img{
+        width: 40px;
+    }
+
+    .navigation ul li{
+        width: 10%;
+        height: 63px;
+    }
+
+    .navigation ul li a {
+        height: 65px;
+    }
+
+    .navigation ul li a .text{
+        font-size:  1em;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+    .navigation ul li.active{
+        border-bottom: 3px solid red;
+        transition: 0.5s;
+    }
+
+    .navigation ul li.active  a .text{
+        transform: translateY(0px);
+    }
+
+    .navigation ul li:not(.active):hover{
+        border-bottom: 3px solid var(--third-color);
+        transition: 0.5s;
+    }
+
+    /* navigation - end */
 }
