@@ -4,7 +4,7 @@
             <li class="list active">
                 <a href="#">
                     <span class="icon">
-                        <img src="../../assets/img/home.png">
+                        <img src="../../assets/img/icon/home.png">
                     </span>
                     <span class="text">Home</span>
                 </a>
@@ -12,7 +12,7 @@
             <li class="list">
                 <a href="#">
                     <span class="icon">
-                        <img src="../../assets/img/home.png">
+                        <img src="../../assets/img/icon/home.png">
                     </span>
                     <span class="text">CV</span>
                 </a>
@@ -20,7 +20,7 @@
             <li class="list">
                 <a href="#">
                     <span class="icon">
-                        <img src="../../assets/img/home.png">
+                        <img src="../../assets/img/icon/home.png">
                     </span>
                     <span class="text">Projets</span>
                 </a>
@@ -28,7 +28,7 @@
             <li class="list">
                 <a href="#">
                     <span class="icon">
-                        <img src="../../assets/img/home.png">
+                        <img src="../../assets/img/icon/home.png">
                     </span>
                     <span class="text">Profil</span>
                 </a>
