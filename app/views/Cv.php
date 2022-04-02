@@ -19,7 +19,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <script async src="../js/tabbar.js"></script>
     <header>
     <?php
         include('include/tabbar.php');
