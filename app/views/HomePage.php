@@ -18,7 +18,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="dark">
+    <script async src="../js/tabbar.js"></script>
     <header>
     <?php
         include('include/tabbar.php');

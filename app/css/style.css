@@ -257,5 +257,37 @@ body{
         transition: 0.5s;
     }
 
+    .navigation ul[role="menu"]{
+        width: 100%;
+        flex-direction: column;
+        display: none;
+    }
+
+    .navigation ul[role="menu"] li{
+        width: 100%;
+        background-color: var(--secondary-color);
+    }
+
+    .navigation li:hover > ul[role="menu"]{
+        display: flex;
+    }
+
+    .dark .navigation a[aria-haspopup="true"] > .text > img{
+        width: 20px;
+        position: relative;
+        bottom: -3px;
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(291deg) brightness(113%) contrast(100%);
+        padding-left: 0.25em;
+    }
+    
+    .light .navigation a[aria-haspopup="true"] > .text > img{
+        width: 15px;
+        position: relative;
+        bottom: -3px;
+        padding-left: 0.25em;
+    }
+
+
     /* navigation - end */
+
 }
