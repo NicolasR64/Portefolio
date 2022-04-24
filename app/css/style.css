@@ -2,19 +2,36 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'spin cycle','Roboto', sans-serif;
 }
 
-:root{
+.dark{
     --primary-color: #2a2c35;
     --secondary-color: #222327;
     --third-color: #FFFFFF;
-    --nav-active-color: #3031356c;
-    --nav-li-width: 25%;
+    --text-color: #FFFFFF;
+    --nav-primary-color: #2a2c3580;
+    --nav-secondary-color: #222327;
+    --nav-sm-m-li-width: 25%;
+}
+
+.light{
+    --primary-color: #F1F1F1;
+    --secondary-color: #F1F1F1;
+    --third-color: #2a2c35;
+    --text-color: #000000;
+    --nav-primary-color: #F1F1F1;
+    --nav-secondary-color: #F1F1F1;
+    --nav-sm-m-li-width: 25%;
 }
 
 body{
     background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+main{
+    width: 100vw;
 }
 
 /* navigation - begin */
@@ -30,10 +47,10 @@ body{
 }
 
 .navigation{
-    background-color: var(--secondary-color);
+    z-index: 1030;
+    background-color: var(--nav-primary-color);
     width: 100%;
-    height: 65px;
-    position: relative;
+    height: 63px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,7 +67,7 @@ body{
     list-style: none;
     z-index: 10;
     height: 100%;
-    width: var(--nav-li-width);
+    width: var(--nav-sm-m-li-width);
 }
 
 .navigation ul li a {
@@ -126,6 +143,19 @@ body{
 }
 
 /* navigation - end */
+
+/* hero - begin */
+
+.hero{
+    width: 100vw;
+    height: 100vh;
+}
+
+.hero video{
+    object-fit: cover;
+}
+
+/* hero - end */
 
 @media screen and (min-width: 325px) {
     /* navigation - begin */
@@ -217,6 +247,11 @@ body{
         display: flex!important;
     }
 
+    .navigation{ 
+        position: fixed;
+        top:0;
+    }
+
     .nav-brand, .nav-profile{
         width: 10%;
         display: flex;
@@ -224,12 +259,20 @@ body{
         align-items: center;
     }
 
-    .nav-brand img, .nav-profile img{
+    .nav-brand img{
         width: 40px;
     }
 
+    .nav-profile img{
+        width: 30px;
+    }
+
+    .dark .nav-brand img, .dark .nav-profile img{
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(291deg) brightness(113%) contrast(100%);
+    }
+
     .navigation ul li{
-        width: 10%;
+        width: 14%;
         height: 63px;
     }
 
@@ -255,6 +298,11 @@ body{
     .navigation ul li:not(.active):hover{
         border-bottom: 3px solid var(--third-color);
         transition: 0.5s;
+    }
+
+    .light .navigation ul li:not(.active):hover{
+        border-bottom: 3px solid var(--third-color);
+        transition: 0.2s;
     }
 
     .navigation ul[role="menu"]{

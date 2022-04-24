@@ -1,4 +1,4 @@
-<nav class="navigation menuDropdown dark" role="navigation">
+<nav class="navigation menuDropdown" role="navigation">
     <div class="nav-brand" role="none" aria-label="contient le logo">
         <img src="../../assets/img/icon/home.png" alt="logo du site">
     </div>
@@ -7,14 +7,14 @@
         <!-- rajouter aria-expanded="true" / "false" en fonction de si submenu ouvert ou non -->
         <!-- <li role="separator"></li> permet de faire une ligne séparé -->
         <li class="list active"  role="none">
-            <a href="#" target="_self" role="menuitem" tabindex="0" aria-haspopup="false" aria-current="page">
+            <a href="HomePage.php" target="_self" role="menuitem" tabindex="0" aria-haspopup="false" aria-current="page">
                 <span class="text">
                     Home
                 </span>
             </a>
         </li>
         <li class="list" role="none">
-            <a href="#" target="_self" role="menuitem" tabindex="-1" aria-haspopup="false">
+            <a href="Cv.php" target="_self" role="menuitem" tabindex="-1" aria-haspopup="false">
                 <span class="text">
                     Mon CV
                 </span>
@@ -61,7 +61,7 @@
     </ul>
     <div class="nav-profile">
         <a href="#" target="_self" role="link" aria-label="Lien vers la page profile du site">
-            <img src="../../assets/img/icon/profile.png" style="background-color: white;border-radius: 50%; width: 30px;">
+            <img src="../../assets/img/icon/profile.png">
         </a>
     </div>
 </nav>

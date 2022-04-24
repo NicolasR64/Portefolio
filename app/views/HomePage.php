@@ -26,8 +26,20 @@
         include('include/menuDropdown.php');
     ?>
     </header>
+    <main>
+        <section class="hero">
+            <video autoplay loop muted preload="auto">
+                <source src="" type="video/mp4">
+                Désolé, votre navvigateur ne supporte pas la vidéo.
+            </video>
+            <div class="hero-text">
+                <strong>Bienvenue</strong>
+                <p>Decouvrez mon univers</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="https://www.flaticon.com/fr/icones-gratuites">Certaines icônes créées par Grow studio - Flaticon</a>
+    </footer>
 </body>
-<footer>
-    <a href="https://www.flaticon.com/fr/icones-gratuites/maisons" title="maisons icônes">Maisons icônes créées par Grow studio - Flaticon</a>
-</footer>
 </html>
