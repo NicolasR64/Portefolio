@@ -20,23 +20,26 @@
 </head>
 <body class="dark">
     <script async src="../js/tabbar.js"></script>
-    <header>
+    <script async src="../js/tabbar.js"></script>
     <?php
         include('include/tabbar.php');
         include('include/menuDropdown.php');
     ?>
+    <header role="banner">
+        <video muted autoplay loop>
+            <source src="../../assets/video/hero.mp4"
+                    type="video/mp4">
+
+            Désolé, votre navigateur ne supporte pas cette vidéo.
+        </video>
+        <!-- 
+        <p>Bienvenue sur mon site web!</p>
+        <br>
+        <p>HELLO WORLD!</p> 
+        -->
     </header>
     <main>
-        <section class="hero">
-            <video autoplay loop muted preload="auto">
-                <source src="" type="video/mp4">
-                Désolé, votre navvigateur ne supporte pas la vidéo.
-            </video>
-            <div class="hero-text">
-                <strong>Bienvenue</strong>
-                <p>Decouvrez mon univers</p>
-            </div>
-        </section>
+        
     </main>
     <footer>
         <a href="https://www.flaticon.com/fr/icones-gratuites">Certaines icônes créées par Grow studio - Flaticon</a>

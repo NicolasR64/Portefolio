@@ -1,4 +1,4 @@
-<nav class="navigation menuDropdown" role="navigation">
+<nav class="navigation menuDropdown bg-transparent dark" role="navigation" id="menuDropdown">
     <div class="nav-brand" role="none" aria-label="contient le logo">
         <img src="../../assets/img/icon/home.png" alt="logo du site">
     </div>
@@ -6,21 +6,61 @@
         <!-- class="active" + aria-currrent="page" représente quel page nous sommes -->
         <!-- rajouter aria-expanded="true" / "false" en fonction de si submenu ouvert ou non -->
         <!-- <li role="separator"></li> permet de faire une ligne séparé -->
-        <li class="list active"  role="none">
+        <?php
+        $activePage = basename($_SERVER['PHP_SELF'], ".php");
+        if($activePage == "HomePage" )
+        {
+            echo'
+            <li class="list active"  role="none">
+            ';
+        }
+        else
+        {
+            echo'
+            <li class="list"  role="none">
+            ';
+        }
+        ?>
             <a href="HomePage.php" target="_self" role="menuitem" tabindex="0" aria-haspopup="false" aria-current="page">
                 <span class="text">
                     Home
                 </span>
             </a>
         </li>
-        <li class="list" role="none">
-            <a href="Cv.php" target="_self" role="menuitem" tabindex="-1" aria-haspopup="false">
+        <?php
+        if($activePage == "cv" )
+        {
+            echo'
+            <li class="list active"  role="none">
+            ';
+        }
+        else
+        {
+            echo'
+            <li class="list"  role="none">
+            ';
+        }
+        ?>
+            <a href="cv.php" target="_self" role="menuitem" tabindex="-1" aria-haspopup="false">
                 <span class="text">
                     Mon CV
                 </span>
             </a>
         </li>
-        <li class="list" role="none">
+        <?php
+        if($activePage == "projet" )
+        {
+            echo'
+            <li class="list active"  role="none">
+            ';
+        }
+        else
+        {
+            echo'
+            <li class="list"  role="none">
+            ';
+        }
+        ?>
             <a href="#" target="_self" role="menuitem" tabindex="-1" aria-haspopup="true" aria-expanded="false">
                 <span class="text">
                     Projets
@@ -51,7 +91,20 @@
                 </li>
             </ul>
         </li>
-        <li class="list" role="none">
+        <?php
+        if($activePage == "#" )
+        {
+            echo'
+            <li class="list active"  role="none">
+            ';
+        }
+        else
+        {
+            echo'
+            <li class="list"  role="none">
+            ';
+        }
+        ?>
             <a href="#" target="_self" role="menuitem" aria-label="Lien vers le menu 4 du site">
                 <span class="text">
                     menu 4

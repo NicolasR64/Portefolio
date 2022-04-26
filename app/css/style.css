@@ -239,6 +239,22 @@ main{
 @media screen and (min-width: 800px) {
     /* navigation - begin */
 
+    .navigation{
+        position: fixed;
+        top: 0px;
+        z-index: 1000;
+    }
+
+    .bg-solid{
+        background-color: var(--secondary-color);
+        transition: 1s;
+    }
+
+    .bg-transparent{
+        background-color: transparent;
+        transition: 1s;
+    }
+    
     .tabbar{
         display: none;
     }
@@ -338,4 +354,32 @@ main{
 
     /* navigation - end */
 
+    /* header begin */
+
+    header[role="banner"]{
+        background-image: linear-gradient(to right, #434343 0%, black 100%);
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        font-size: 2em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header[role="banner"] video{
+        width: 100%;
+    }  
+
+    .dark header[role="banner"]{
+        background-image: linear-gradient(to right, #434343 0%, black 100%);
+        color: var(--third-color);
+    }
+
+    .light header[role="banner"]{
+        background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+        color: var(--secondary-color);
+    }
+
+    /* header end */
 }
