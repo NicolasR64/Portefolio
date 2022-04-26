@@ -31,7 +31,7 @@ body{
 }
 
 main{
-    width: 100vw;
+    width: 100%;
 }
 
 /* navigation - begin */
@@ -353,6 +353,95 @@ main{
 
 
     /* navigation - end */
+ 
+    /* cv - begin */
+
+    .cvHero{
+        width: 100%;
+        height: 100vh;
+        border: 1px solid red;
+    }
+
+    .cvHero-container{
+        padding: 10%;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .cvHero-containerFlex{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+
+
+    
+
+    /* cv - end */
+
+    /* projets - begin */
+
+    .projets{
+        width: 100%;
+        height: auto;
+        background-image: url("../../assets/img/background/univers01.jpg");
+        background-size: cover;
+    }
+
+    .cards-container{
+        width: 100%;
+        height: 100%;
+        padding: 10%;
+    }
+
+    .cards-containerFlex{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .card{
+        background-color: rgba(0, 0, 0, 0.70);
+        border-radius: 15px;
+        max-width: 250px;
+        margin: 25px;
+    }
+
+    .card img{
+        width: 100%; 
+    }
+
+    .card-body{
+        padding: 25px;
+        color: white;
+    }
+
+    .card-title{
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .card-text{
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+
+    .card-body a{
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        font-size: 13px;
+        background-color: rgb(255, 0, 0, 0.95);
+        border-radius: 5px;
+    }
+
+    .card-body a:hover{
+        transition: 0.4s;
+        background-color:rgb(235, 0, 0);
+    }
+
+    /* projets - end */
 
     /* header begin */
 

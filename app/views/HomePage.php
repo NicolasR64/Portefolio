@@ -39,7 +39,90 @@
         -->
     </header>
     <main>
-        
+        <section class="hero">
+            
+        </section>
+        <section class="cvHero">
+            <div class="cvHero-container">
+                <div class="cvHero-containerFlex">
+                    <div class="">        
+                        <h2>TITRE</h2>
+                        <h4>Sous-titre</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="projets">
+  <!--           <div class="">
+                <div class="">
+                    <h2>TITRE</h2>
+                    <h4>Sous-titre</h4>
+                </div>
+            </div> -->
+            <div class="cards-container">
+                <div class="cards-containerFlex">
+                    <!-- Projet 1 -->
+                    <div class="card">
+                        <img src="../../assets/img/card/lorem-ipsum@2x.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+
+                    <!-- Projet 2 -->
+                    <div class="card">
+                        <img src="../../assets/img/card/lorem-ipsum@2x.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+
+                    <!-- Projet 3 -->
+                    <div class="card">
+                        <img src="../../assets/img/card/lorem-ipsum@2x.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+
+                    <!-- Projet 4 -->
+                    <div class="card">
+                        <img src="../../assets/img/card/lorem-ipsum@2x.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+
+                    <!-- Projet 5 -->
+                    <div class="card">
+                        <img src="../../assets/img/card/lorem-ipsum@2x.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+
+                    <!-- Projet 6 -->
+                    <div class="card">
+                        <img src="../../assets/img/card/lorem-ipsum@2x.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <a href="https://www.flaticon.com/fr/icones-gratuites">Certaines icônes créées par Grow studio - Flaticon</a>
