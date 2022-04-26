@@ -28,13 +28,87 @@
     </header>
     <main>
         <section class="hero">
-            <video autoplay loop muted preload="auto">
-                <source src="" type="video/mp4">
-                Désolé, votre navvigateur ne supporte pas la vidéo.
-            </video>
-            <div class="hero-text">
-                <strong>Bienvenue</strong>
-                <p>Decouvrez mon univers</p>
+            
+        </section>
+        <section class="cvHero">
+            <div class="cvHero-container">
+                <div class="cvHero-containerFlex">
+                    <div class="">        
+                        <h2>TITRE</h2>
+                        <h4>Sous-titre</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="projets">
+  <!--           <div class="">
+                <div class="">
+                    <h2>TITRE</h2>
+                    <h4>Sous-titre</h4>
+                </div>
+            </div> -->
+            <div class="cards-container">
+                <div class="cards-containerFlex">
+                    <!-- Projet 1 -->
+                    <div class="card">
+                        <img src="../../assets/img/card/lorem-ipsum@2x.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+
+                    <!-- Projet 2 -->
+                    <div class="card">
+                        <img src="../../assets/img/card/lorem-ipsum@2x.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+
+                    <!-- Projet 3 -->
+                    <div class="card">
+                        <img src="../../assets/img/card/lorem-ipsum@2x.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+
+                    <!-- Projet 4 -->
+                    <div class="card">
+                        <img src="../../assets/img/card/lorem-ipsum@2x.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+
+                    <!-- Projet 5 -->
+                    <div class="card">
+                        <img src="../../assets/img/card/lorem-ipsum@2x.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+
+                    <!-- Projet 6 -->
+                    <div class="card">
+                        <img src="../../assets/img/card/lorem-ipsum@2x.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
