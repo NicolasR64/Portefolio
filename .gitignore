@@ -3,3 +3,6 @@ video
 
 # modules
 node_modules/
+
+#archive css
+styleArchive.css
