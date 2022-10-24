@@ -572,3 +572,14 @@ main{
         }
       }
 }
+
+
+
+/* HERE */
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../assets/img/background/background-hero.jpeg");
+    background-position: cover;
+}
