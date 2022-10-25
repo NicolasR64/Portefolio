@@ -6,3 +6,9 @@ node_modules/
 
 #archive css
 styleArchive.css
+
+#temp js hiden
+animation.js
+menuDropdown.js
+tabbar.js
+script.js
