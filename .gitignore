@@ -1,14 +1,27 @@
 # assets/video
 video
 
+#assets/font
+font
+
+#assets/config
+config
+
+#libs
+libs
+
+#views
+views
+
 # modules
-node_modules/
+node_modules
 
 #archive css
 styleArchive.css
 
 #temp js hiden
-animation.js
-menuDropdown.js
-tabbar.js
-script.js
+temp
+
+
+
+
