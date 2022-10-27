@@ -1,52 +1,74 @@
+#hero
+{
+	z-index: 10;
+	height: 100vh;
+	width: 100vw;
+	max-width: 100%;
+	background: radial-gradient(ellipse at bottom, #0b1829 0%, #000000 100%);
+}
 
-.hero-container {
-    width: 100vw;
-    max-width: 100%; /* to avoid horizontal overflow */
-    height: 100vh;
-  }
-  
-  .hero {
-    z-index: 50;
-    position: relative;
-    display: flex;
-    padding-left: 10vw;
-    width: 100%;
-    margin: 25vh auto;
-    color: var(--color-white);
-  }
-  
-  .hero-content h1,
-  h2 {
-    margin-bottom: 30px;
-  }
-  
-  .hero-content p{
-    color: var(--color-gray); 
-  }
-  
-  .hero-content h2{
-    color: var(--color-darkRed);
-  }
-  
-  .hero-content p {
-    width: 500px;
-    font-size: 20px;
-    line-height: 1.3;
-  }
-  
-  /* ---- particles.js container ---- */
-  
-  #particles-js {
-    z-index: 10;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #b61924;
-    background-image: url("../assets/img/background/background-hero.jpeg");
-    background-size: cover;
-  }
-  
-  
-  
+#particles-js
+{
+	z-index: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+#hero .content
+{
+	display: flex;
+	flex-flow: column;
+	padding: 0 12vw;
+}
+
+.content .welcome
+{
+	font-size: 16px;
+	color: var(--color-lightYellow);
+}
+
+.content .title
+{
+	margin-top: 25px;
+	font-size:  6vw;
+	color: var(--color-white);
+}
+
+.content .subtitle
+{
+	margin-top: 15px;
+	font-size: 5vw;
+	color: var(--color-yellow);
+}
+
+.content .shortDescription
+{
+	margin-top: 25px;
+	max-width: 500px;
+	font-size: 20px;
+	color: var(--color-gray);
+	line-height: 1.4;
+}
+
+.content .button
+{
+	display: flex;
+	flex-direction: row nowrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 40px;
+}
+
+
+.button img{
+	height: 13px;
+    margin-left: 15px;
+    fill: none;
+    stroke: var(--color-lightYellow);
+    stroke-width: 3px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
