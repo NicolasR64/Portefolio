@@ -1,0 +1,74 @@
+#hero
+{
+	z-index: 10;
+	height: 100vh;
+	width: 100vw;
+	max-width: 100%;
+	background: radial-gradient(ellipse at bottom, #0b1829 0%, #000000 100%);
+}
+
+#particles-js
+{
+	z-index: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+#hero .content
+{
+	display: flex;
+	flex-flow: column;
+	padding: 0 12vw;
+}
+
+.content .welcome
+{
+	font-size: 16px;
+	color: var(--color-lightYellow);
+}
+
+.content .title
+{
+	margin-top: 25px;
+	font-size:  6vw;
+	color: var(--color-white);
+}
+
+.content .subtitle
+{
+	margin-top: 15px;
+	font-size: 5vw;
+	color: var(--color-yellow);
+}
+
+.content .shortDescription
+{
+	margin-top: 25px;
+	max-width: 500px;
+	font-size: 20px;
+	color: var(--color-gray);
+	line-height: 1.4;
+}
+
+.content .button
+{
+	display: flex;
+	flex-direction: row nowrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 40px;
+}
+
+
+.button img{
+	height: 13px;
+    margin-left: 15px;
+    fill: none;
+    stroke: var(--color-lightYellow);
+    stroke-width: 3px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
