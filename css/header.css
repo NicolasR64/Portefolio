@@ -48,5 +48,5 @@ nav img {
 
 .nav-link:hover {
   transition: ease 0.7s;
-  color: var(--color-lightRed);
+  color: var(--color-lightYellow);
 }
