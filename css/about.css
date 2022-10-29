@@ -1,14 +1,7 @@
 #about{
-    display: flex;
-    flex-direction: column;
-    padding: 5vw 5vw 0 5vw;
+	flex-direction: column;
+    margin-bottom: 150px;
 }
-
-#about h3{
-    text-align: center;
-}
-
-/* bio */
 
 #bio{
     display: flex;
@@ -24,11 +17,3 @@
     color: var(--color-darkGray);
     font-size: 18px;
 } 
-
-/* separator */
-
-svg{
-    position: relative;
-    bottom: -5px;
-    fill: var(--color-blue);
-}
