@@ -15,6 +15,8 @@
     <link rel="stylesheet" media="screen" href="css/style.css" />
     <link rel="stylesheet" media="screen" href="css/header.css" />
     <link rel="stylesheet" media="screen" href="css/hero.css" />
+    <link rel="stylesheet" media="screen" href="css/about.css" />
+    <link rel="stylesheet" media="screen" href="css/skills.css" />
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,38 +30,110 @@
       <nav>
         <div class="nav-content">
           <ul>
-            <li><a class="nav-link" href="#Home">Home</a></li>
-            <li><a class="nav-link" href="#About">About</a></li>
-            <li><a class="nav-link" href="#Projects">Projects</a></li>
-            <li><a class="nav-link" href="#Skills">Skills</a></li>
-            <li><a class="nav-link" href="#Experiences">Experiences</a></li>
-            <li><a class="nav-link" href="#Contact">Contact</a></li>
+            <li><a class="nav-link" href="#hero">Home</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#skills">Skills</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#experiences">Experiences</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
     </header>
-    <section id="hero">
-      <div id="particles-js"></div>
-      <div class="content">
-        <span class="welcome">Nice to meet you! My name is</span>
-        <span class="title">Nicolas Ravaux.</span>
-        <span class="subtitle">I'm a IT Business Manager</span>
-        <p class="shortDescription">
-          I'm a 20 years old belgian student in
-          <a class="link" href="www.helha.be" target="_blank">HELHa</a> school
-          and I study it business management. My favorites fields are web
-          technologies and software development!
-        </p>
-        <a class="button" href="#"> About me </a>
-      </div>
-    </section>
-    <main style="height: 750px; width: 100%">
-      <p>Lorem ipsum</p>
+    <main>
+      <section id="hero">
+        <div id="particles-js"></div>
+        <div class="content">
+          <span class="welcome">Nice to meet you! My name is</span>
+          <span class="title">Nicolas Ravaux.</span>
+          <span class="subtitle">I'm a IT Business Manager</span>
+          <p class="shortDescription">
+            I'm a 20 years old belgian student in
+            <a class="link" href="www.helha.be" target="_blank">HELHa</a> school
+            and I study it business management. My favorites fields are web
+            technologies and software development!
+          </p>
+          <a class="button" href="#bio"> About me </a>
+        </div>
+      </section>
+      <section id="about">
+        <h3>About me</h3>
+        <div id="bio">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel
+            massa non justo ultrices rutrum. Maecenas pharetra, quam sit amet
+            laoreet iaculis, mauris ante laoreet quam, eget euismod nunc ligula
+            rhoncus libero. Vestibulum tincidunt sodales ligula, sit amet
+            fermentum erat pharetra vel. Nam sit amet bibendum sem, vitae
+            malesuada erat.
+          </p>
+          <p>
+            Vivamus sit amet ante lacus. Praesent condimentum, est sed ornare
+            finibus, elit ligula porttitor turpis, eget ornare nunc purus at
+            ante. Vestibulum gravida feugiat nisl, eu mollis quam suscipit eu.
+            Suspendisse vitae tempus metus. Ut id justo hendrerit ante egestas
+            feugiat ac et metus. Etiam quis urna ut nulla convallis malesuada
+            sodales non diam.
+          </p>
+          <p>
+            Suspendisse pharetra tellus eu magna facilisis, non ultricies dui
+            congue. Duis in elit eu sapien consectetur tincidunt aliquam ut
+            neque. Nunc pellentesque lacinia sodales. Nullam rutrum consequat
+            tortor sit amet porttitor. Quisque vel leo est. Sed tellus metus,
+            suscipit eu dignissim ut, consectetur et neque. Integer.
+          </p>
+        </div>
+      </section>
+      <section id="skills">
+        <div class="separator">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+        <h3>My skills</h3>
+        <div class="categories">
+          <a class="link link-active category" style="cursor:pointer">front-end</a>
+          <a class="link category" style="cursor:pointer">back-end</a>
+          <a class="link category" style="cursor:pointer">Machine learning</a>
+          <a class="link category" style="cursor:pointer">Design</a>
+          <a class="link category" style="cursor:pointer">Computer Graphics</a>
+          <a class="link category" style="cursor:pointer">Software development</a>
+        </div>
+        <div id="skills">
+          <div class="skills-container">
+            <div class="skill">
+              <a href="#" alt="">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20220802133510%21The_C_Programming_Language_logo.svg"
+                />
+                <span>c</span>
+              </a>
+            </div>
+            <div class="skill">
+              <a href="#" alt="">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20220802133510%21The_C_Programming_Language_logo.svg"
+                />
+                <span>c</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- scripts -->
     <script src="libs/particles.js"></script>
     <script src="js/app.js"></script>
     <script src="js/skills.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/skill.js"></script>
   </body>
 </html>

@@ -1,0 +1,19 @@
+#about{
+	flex-direction: column;
+    margin-bottom: 150px;
+}
+
+#bio{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 50%;
+    height: 100%;
+    padding: 0 1vw 0 4vw;
+}
+
+#bio p{
+    margin-bottom: 25px;
+    color: var(--color-darkGray);
+    font-size: 18px;
+} 
