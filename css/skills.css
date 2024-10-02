@@ -16,12 +16,36 @@
 
 /* skills-container */
 
+#skills_box{
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
 .skills-container{
     display: grid;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%);
     grid-template-columns: repeat(auto-fill, 125px);
     grid-gap: 35px;
     margin-top: 35px;
     min-width: 37vw;
+    transition: opacity 0s ease, transform 1s ease;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: auto;
+}
+
+.skills-container.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.skills-container.show .skill{
+    transform: translateY(0px);
 }
 
 .skill{
@@ -31,11 +55,10 @@
     text-align: center;
     border-radius: 20px;
     box-shadow : 0px 0px 10px rgba(28, 28, 51, 0.15);
-}
-
-.skill img{
-    width: 90%;
-    transition: 0.7s;
+    transform: translateY(20px);
+    transition: transform 0.5s ease;
+    padding-top: 7px;
+    box-sizing: border-box;
 }
 
 .skill a{
@@ -43,6 +66,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.skill a img{
+    width: 100%;
+    transition: 0.7s;
 }
 
 .skill a:hover img{

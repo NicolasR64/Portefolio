@@ -1,100 +1,243 @@
-function skills_events()
-{
-	function events()
-	{
-		let categories = document.querySelectorAll('#skills_section .box .menu .category');
-		let skills_lists = document.querySelectorAll('#skills_section .box .box_content .skills_list');
-
-		function choose(i)
-		{
-			for (let j = 0; j < categories.length; j++)
-			{
-				categories[j].style.backgroundColor = 'rgba(0, 0, 0, 0)';
-				categories[j].style.cursor = 'pointer';
-			}
-
-			categories[i].style.backgroundColor = 'white';
-			categories[i].style.cursor = 'default';
-
-			for (let j = 0; j < skills_lists.length; j++)
-				skills_lists[j].style.display = 'none';
-
-			skills_lists[i].style.display = 'grid';
-		}
-
-		for (let i = 0; i < categories.length; i++)
-		{
-			categories[i].addEventListener('click', (e) =>
-			{
-				choose(i);
-			});
-		}
-
-		choose(0);
-	}
+// 1. Init
+function onInit_skills(){
 
 	function generate_skills(my_data)
 	{
-		let box = document.querySelector('#skills_section .box');
-		box.innerHTML = '';
+		// 1. Get the menu section
+		let MenuBox = document.getElementById('skills_type');
+		MenuBox.innerHTML = '';
+		let SkillsBox = document.getElementById('skills_box')
+		SkillsBox.innerHTML = '';
 
+		// 2. Create menu
 		if (window.innerWidth > 930)
 		{
+			// 2.1 PC style
 			let menu = '';
-			let box_content = '';
+			let skills_box = '';
 
-			for (let category of my_data.skills_categories)
-			{
-				menu += `<div class="category">${category.name}</div>`;
-
-				let skills = '';
-
-				for (let skill of category.skills)
-				{
-					skills += `<a class="skill" href="${skill.link}" target="_blank">
-						<img src="${skill.logo}">
-						<span>${skill.name}</span>
-					</a>`;
+			my_data.skills_categories.forEach((category, index) => {
+				
+				// 2.2 Menu creation
+				if(index != 0){
+					menu += `<a class="link category" >${category.name}</a>`;
+				}else{
+					menu += `<a class="link link-active category" >${category.name}</a>`;
 				}
+				// 2.3 Skills creation
+				let skills = '';
+				category.skills.forEach(skill => {
+					skills += `
+					<div class="skill">
+						<a href="${skill.link}" target="_blank">
+							<img src="${skill.logo}">
+							<span>${skill.name}</span>
+						</a>
+					</div>`;
+				})
+				skills_box += `<div class="skills-container">${skills}</div>`;
+			});			
 
-				box_content += `<div class="skills_list">${skills}</div>`;
-			}
+			// 2.4 Dislay menu and skills
+			MenuBox.innerHTML = `${menu}`;
+			SkillsBox.innerHTML = `${skills_box}`;
 
-			box.innerHTML = `<div class="menu">${menu}</div><div class="box_content">${box_content}</div>`;
+			// 2.5 Add event on menu link
+			let categories = document.querySelectorAll('#skills_type .category');
+			categories.forEach((category, index) => {
+				category.addEventListener('click', (e) => {
+					displayCategory(index);
+				});
+			});
 
-			events();
+			displayCategory(0);
 		}
+	}
 
-		else
-		{
-			for (let category of my_data.skills_categories)
-			{
-				box.innerHTML += `<div class="category_title">${category.name}</div>`;
-
-				let skills = '';
-
-				for (let skill of category.skills)
-				{
-					skills += `<a class="skill" href="${skill.link}" target="_blank">
-						<img src="${skill.logo}">
-						<span>${skill.name}</span>
-					</a>`;
-				}
-
-				box.innerHTML += `<div class="box_content"><div class="skills_list">${skills}</div></div>`;
+	function displayCategory(i=0){
+		let categories = document.querySelectorAll('#skills_box .skills-container');
+		let menu = document.querySelectorAll('#skills_type .category');
+		let activeMenu = document.querySelector('#skills_type .link-active')
+		let activeCategory = document.querySelector('#skills_box .show');
+				
+		if(activeCategory != null){
+			activeCategory.classList.remove('show');
+		}
+		for (let index = 0; index < categories.length; index++) {
+			let category = categories[index];
+			if (i == index) {
+				activeMenu.classList.remove('link-active');
+				menu[index].classList.add('link-active');
+				category.classList.add('show');
+				break;
 			}
 		}
 	}
 
-	let prev_width = window.innerWidth;
-	read_json('resources/jsons/skills.json', generate_skills);
+	generate_skills(JSON)
+}
 
-	window.addEventListener('resize', () =>
-	{
-		if ((prev_width >= 930 && window.innerWidth <= 930) || (prev_width <= 930 && window.innerWidth >= 930))
+JSON = {
+	"skills_categories":
+	[
 		{
-			read_json('resources/jsons/skills.json', generate_skills);
-			prev_width = window.innerWidth;
+			"name" : "Front-end Web",
+			"skills" :
+			[
+				{
+					"name": "HTML",
+					"logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/langfr-1024px-HTML5_logo_and_wordmark.svg.png",
+					"link": "https://en.wikipedia.org/wiki/HTML"
+				},
+				{
+					"name": "CSS",
+					"logo": "#",
+					"link": "https://en.wikipedia.org/wiki/CSS"
+				},
+				{
+					"name": "JavaScript",
+					"logo": "#",
+					"link": "https://en.wikipedia.org/wiki/JavaScript"
+				},
+				{
+					"name": "TypeScript",
+					"logo": "#",
+					"link": "https://www.typescriptlang.org"
+				},
+				{
+					"name": "jQuery",
+					"logo": "#",
+					"link": "https://jquery.com/"
+				},
+				{
+					"name": "Bootstrap",
+					"logo": "#",
+					"link": "https://getbootstrap.com/"
+				},
+				{
+					"name": "Angular",
+					"logo": "#",
+					"link": "https://angular.dev"
+				},
+				{
+					"name": "Angular Material",
+					"logo": "#",
+					"link": "https://material.angular.io"
+				},
+				{
+					"name": "Git",
+					"logo": "#",
+					"link": "https://git-scm.com/"
+				},
+				{
+					"name": "PHP",
+					"logo": "#",
+					"link": "https://www.php.net"
+				}
+			]
+		},
+		{
+			"name" : "Back-end Web",
+			"skills" :
+			[
+				{
+					"name": "JavaScript",
+					"logo": "#",
+					"link": "https://en.wikipedia.org/wiki/JavaScript"
+				},
+				{
+					"name": "TypeScript",
+					"logo": "#",
+					"link": "https://www.typescriptlang.org"
+				},
+				{
+					"name": "DiscordJS",
+					"logo": "#",
+					"link": "https://discord.js.org"
+				},
+				{
+					"name": "C#",
+					"logo": "#",
+					"link": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+				},
+				{
+					"name": "SQL",
+					"logo": "#",
+					"link": "https://sql.sh"
+				},
+				{
+					"name": "PostGresSQL",
+					"logo": "#",
+					"link": "https://www.postgresql.org"
+				},
+				{
+					"name": "Stripe",
+					"logo": "#",
+					"link": "https://stripe.com/"
+				},
+				{
+					"name": "Git",
+					"logo": "#",
+					"link": "https://git-scm.com/"
+				},
+				{
+					"name": "Java spring boot",
+					"logo": "#",
+					"link": "https://spring.io/projects/spring-boot"
+				},
+				{
+					"name": "PHP",
+					"logo": "#",
+					"link": "https://www.php.net"
+				}
+			]
+		},
+		{
+			"name" : "Software Development",
+			"skills" :
+			[
+				{
+					"name": "C",
+					"logo": "https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20220802133510%21The_C_Programming_Language_logo.svg",
+					"link": "https://en.wikipedia.org/wiki/C_(programming_language)"
+				},
+				{
+					"name": "Windev",
+					"logo": "#",
+					"link": "https://pcsoft.fr"
+				},
+				{
+					"name": "Java",
+					"logo": "#",
+					"link": "https://en.wikipedia.org/wiki/Java_(programming_language)"
+				},
+				{
+					"name": "C#",
+					"logo": "#",
+					"link": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+				},
+				{
+					"name": "Git",
+					"logo": "#",
+					"link": "https://git-scm.com/"
+				}
+			]
+		},
+		{
+			"name" : "Design",
+			"skills" :
+			[
+				{
+					"name": "Figma",
+					"logo": "",
+					"link": "https://www.figma.com/"
+				},
+				{
+					"name": "Canva",
+					"logo": "",
+					"link": "https://www.canva.com/"
+				}
+			]
 		}
-	});
+	]
 }
