@@ -72,12 +72,13 @@ function onInit_skills(){
 				break;
 			}
 		}
+		dynamicHeightSection();
 	}
 
-	generate_skills(JSON)
+	generate_skills(JSON_SKILLS)
 }
 
-JSON = {
+JSON_SKILLS = {
 	"skills_categories":
 	[
 		{
@@ -240,4 +241,13 @@ JSON = {
 			]
 		}
 	]
+}
+
+
+function dynamicHeightSection(){
+	let skills_box = document.getElementById('skills_box');
+	let skils_menu = document.getElementById('skills_type');
+	let skills_container = document.querySelector('#skills_box .show');
+
+	skills_box.style.height = skills_container.getBoundingClientRect().height + skils_menu.getBoundingClientRect().height + 'px';
 }

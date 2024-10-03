@@ -1,0 +1,40 @@
+#contact{
+    position: relative;
+    flex-flow: column nowrap;
+    background-color: var(--color-darkPurple);
+}
+.contact-icons{
+    display: flex;
+    flex-flow: row;
+    gap: 10px;
+}
+
+.contact-icons .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0px 20px 20px;
+    background-color: var(--color-white);
+    border-radius: 20px;   
+    overflow: hidden;
+}
+
+
+.icon img{
+    width: 100px;
+    height: 100px;
+}
+
+.icon p{
+    transition: 0.4s ease;
+    opacity: 0;
+    color: black;
+}
+
+.icon:hover p{
+    transition: 0.7s ease;
+    width: var(--width)!important;
+    margin-right: 20px;
+    opacity: 1;
+}   

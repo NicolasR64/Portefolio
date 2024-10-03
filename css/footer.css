@@ -1,0 +1,7 @@
+footer{
+    position: relative;
+    background-color: var(--color-darkPurple);
+    text-align: right;
+    padding-right: 30px;
+    padding-bottom: 5px;
+}
