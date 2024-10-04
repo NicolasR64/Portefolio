@@ -1,7 +1,6 @@
 window.onload = () =>
 {
-   /*  experiences_events();
-	projects_events(); */
+	onInit_headerScroll();
 	onInit_projects();
 	onInit_skills();
 };
