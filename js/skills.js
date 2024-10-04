@@ -87,52 +87,52 @@ JSON_SKILLS = {
 			[
 				{
 					"name": "HTML",
-					"logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/langfr-1024px-HTML5_logo_and_wordmark.svg.png",
+					"logo": "https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20220802133510%21The_C_Programming_Language_logo.svg",
 					"link": "https://en.wikipedia.org/wiki/HTML"
 				},
 				{
 					"name": "CSS",
-					"logo": "#",
+					"logo": "https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20220802133510%21The_C_Programming_Language_logo.svg",
 					"link": "https://en.wikipedia.org/wiki/CSS"
 				},
 				{
 					"name": "JavaScript",
-					"logo": "#",
+					"logo": "https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20220802133510%21The_C_Programming_Language_logo.svg",
 					"link": "https://en.wikipedia.org/wiki/JavaScript"
 				},
 				{
 					"name": "TypeScript",
-					"logo": "#",
+					"logo": "https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20220802133510%21The_C_Programming_Language_logo.svg",
 					"link": "https://www.typescriptlang.org"
 				},
 				{
 					"name": "jQuery",
-					"logo": "#",
+					"logo": "https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20220802133510%21The_C_Programming_Language_logo.svg",
 					"link": "https://jquery.com/"
 				},
 				{
 					"name": "Bootstrap",
-					"logo": "#",
+					"logo": "https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20220802133510%21The_C_Programming_Language_logo.svg",
 					"link": "https://getbootstrap.com/"
 				},
 				{
 					"name": "Angular",
-					"logo": "#",
+					"logo": "https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20220802133510%21The_C_Programming_Language_logo.svg",
 					"link": "https://angular.dev"
 				},
 				{
-					"name": "Angular Material",
-					"logo": "#",
+					"name": "Ang. Material",
+					"logo": "https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20220802133510%21The_C_Programming_Language_logo.svg",
 					"link": "https://material.angular.io"
 				},
 				{
 					"name": "Git",
-					"logo": "#",
+					"logo": "https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20220802133510%21The_C_Programming_Language_logo.svg",
 					"link": "https://git-scm.com/"
 				},
 				{
 					"name": "PHP",
-					"logo": "#",
+					"logo": "https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20220802133510%21The_C_Programming_Language_logo.svg",
 					"link": "https://www.php.net"
 				}
 			]
@@ -143,52 +143,52 @@ JSON_SKILLS = {
 			[
 				{
 					"name": "JavaScript",
-					"logo": "#",
+					"logo": "https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20220802133510%21The_C_Programming_Language_logo.svg",
 					"link": "https://en.wikipedia.org/wiki/JavaScript"
 				},
 				{
 					"name": "TypeScript",
-					"logo": "#",
+					"logo": "https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20220802133510%21The_C_Programming_Language_logo.svg",
 					"link": "https://www.typescriptlang.org"
 				},
 				{
 					"name": "DiscordJS",
-					"logo": "#",
+					"logo": "https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20220802133510%21The_C_Programming_Language_logo.svg",
 					"link": "https://discord.js.org"
 				},
 				{
 					"name": "C#",
-					"logo": "#",
+					"logo": "https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20220802133510%21The_C_Programming_Language_logo.svg",
 					"link": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
 				},
 				{
 					"name": "SQL",
-					"logo": "#",
+					"logo": "https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20220802133510%21The_C_Programming_Language_logo.svg",
 					"link": "https://sql.sh"
 				},
 				{
 					"name": "PostGresSQL",
-					"logo": "#",
+					"logo": "https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20220802133510%21The_C_Programming_Language_logo.svg",
 					"link": "https://www.postgresql.org"
 				},
 				{
 					"name": "Stripe",
-					"logo": "#",
+					"logo": "https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20220802133510%21The_C_Programming_Language_logo.svg",
 					"link": "https://stripe.com/"
 				},
 				{
 					"name": "Git",
-					"logo": "#",
+					"logo": "https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20220802133510%21The_C_Programming_Language_logo.svg",
 					"link": "https://git-scm.com/"
 				},
 				{
-					"name": "Java spring boot",
-					"logo": "#",
+					"name": "Spring boot",
+					"logo": "https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20220802133510%21The_C_Programming_Language_logo.svg",
 					"link": "https://spring.io/projects/spring-boot"
 				},
 				{
 					"name": "PHP",
-					"logo": "#",
+					"logo": "https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20220802133510%21The_C_Programming_Language_logo.svg",
 					"link": "https://www.php.net"
 				}
 			]
@@ -204,22 +204,22 @@ JSON_SKILLS = {
 				},
 				{
 					"name": "Windev",
-					"logo": "#",
+					"logo": "https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20220802133510%21The_C_Programming_Language_logo.svg",
 					"link": "https://pcsoft.fr"
 				},
 				{
 					"name": "Java",
-					"logo": "#",
+					"logo": "https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20220802133510%21The_C_Programming_Language_logo.svg",
 					"link": "https://en.wikipedia.org/wiki/Java_(programming_language)"
 				},
 				{
 					"name": "C#",
-					"logo": "#",
+					"logo": "https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20220802133510%21The_C_Programming_Language_logo.svg",
 					"link": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
 				},
 				{
 					"name": "Git",
-					"logo": "#",
+					"logo": "https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20220802133510%21The_C_Programming_Language_logo.svg",
 					"link": "https://git-scm.com/"
 				}
 			]
@@ -230,12 +230,12 @@ JSON_SKILLS = {
 			[
 				{
 					"name": "Figma",
-					"logo": "",
+					"logo": "https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20220802133510%21The_C_Programming_Language_logo.svg",
 					"link": "https://www.figma.com/"
 				},
 				{
 					"name": "Canva",
-					"logo": "",
+					"logo": "https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20220802133510%21The_C_Programming_Language_logo.svg",
 					"link": "https://www.canva.com/"
 				}
 			]

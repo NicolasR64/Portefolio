@@ -21,7 +21,7 @@ function onInit_projects(){
 				
 				// 2.3 Projects creation
                 projects += `
-                    <div class="project-wrapper ${index%2 == 0 ? 'right' : 'left'}">
+                    <div class="project-wrapper ${index%2 == 0 ? 'right slide-right' : 'left slide-left'}">
                         <div class="project-picture-side">
                         <div class="project-picture">
                             <img src="${project.image}" alt="#">
