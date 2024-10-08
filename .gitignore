@@ -1,26 +1,7 @@
-# assets/video
-video
-
-#assets/font
-font
-
-#assets/config
-config
-
-#libs
-libs
-
-#views
-views
-
-# modules
-node_modules
-
-#archive css
-styleArchive.css
-
-#temp js hiden
-temp
+views/
+assets/font
+assets/json
+template.html
 
 
 
