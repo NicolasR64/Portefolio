@@ -1,6 +1,7 @@
-#views
-views/*
-
+views/
+assets/font
+assets/json
+template.html
 
 
 
