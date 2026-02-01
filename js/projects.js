@@ -3,23 +3,19 @@ function onInit_projects(){
 
 	function generate_projects(my_data)
 	{
-		// 1. 
-		//let ProjectsCategories = document.getElementById('projects_categories');
-		//ProjectsCategories.innerHTML = '';
+		// 1. Get container
 		let ProjectsContainer = document.getElementById('pContainer')
 		ProjectsContainer.innerHTML = '';
 
-		// 2. 
+		// 2. PC style
 		if (window.innerWidth > 930)
 		{
 			// 2.1 PC style
 			let projects = '';
 
 			my_data.projects.forEach((project, index) => {
-				
-				// 2.2 Menu creation
-				
-				// 2.3 Projects creation
+							
+				// 2.2 Projects creation
                 projects += `
                     <div class="project-wrapper ${index%2 == 0 ? 'right slide-right' : 'left slide-left'}">
                         <div class="project-picture-side">
@@ -49,7 +45,7 @@ function onInit_projects(){
                     </div>`;
 			});			
 
-			// 2.4 Dislay menu and skills
+			// 2.3 Dislay menu and skills
 			ProjectsContainer.innerHTML = `${projects}`;
 		}
 	}
@@ -64,9 +60,31 @@ JSON_PROJECTS = {
 	[
 		{
 			"date": 2024,
-			"type": "Personal Challenge",
-			"title": "Lorem ipsum",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper lectus quis leo fringilla lobortis. Curabitur molestie interdum fringilla. Phasellus in suscipit ipsum. In interdum erat imperdiet, rutrum felis vel, cursus arcu. Vestibulum eget consequat ex. Praesent ultricies interdum nunc sit amet porttitor. ",
+			"type": "Personal",
+			"title": "Portefolio",
+			"description": "The challenge in creating this portfolio was to start from an existing inspiration, whose code was available, and recreate it based solely on the visual appearance. Once the site was rebuilt, I compared my code with the original to analyze the differences and improve my development skills.",
+			"tags":
+			[
+				{ "name": "HTML" },
+				{ "name": "CSS" },
+				{ "name": "JS"}
+			],
+			"links":
+			[
+				"#",
+				"#",
+				"#"
+			],
+			"video": "#",
+			"image": "assets/img/card/portefolio.png",
+			"logo": "#",
+			"categories": ["Personal"]
+		},
+		{
+			"date": 2020,
+			"type": "School Project",
+			"title": "First website",
+			"description": "This project was part of my first year of studies and aimed to help me learn HTML and CSS. It was my first major school project, allowing me to apply these web development skills in a practical context.",
 			"tags":
 			[
 				{ "name": "HTML" },
@@ -76,33 +94,12 @@ JSON_PROJECTS = {
 			[
 				"#",
 				"#",
-				"#"
-			],
-			"video": "#",
-			"image": "assets/img/card/lorem-ipsum@2x.png",
-			"logo": "#",
-			"categories": ["Personal"]
-		},
-		{
-			"date": 2023,
-			"type": "Personal Project",
-			"title": "Generative Adversarial Network",
-			"description": "This project is a deep convolutional generative adversarial network that can create high quality images from a random seed like portraits, animals, drawings and more...",
-			"tags":
-			[
-				{ "name": "Python", "url": "https://www.python.org/" },
-				{ "name": "PyTorch", "url": "https://pytorch.org/" }
-			],
-			"links":
-			[
-				"https://github.com/angeluriot/Generative_adversarial_network",
-				"https://github.com/angeluriot/Generative_adversarial_network",
 				"none"
 			],
 			"video": "#",
-			"image": "assets/img/card/lorem-ipsum@2x.png",
+			"image": "assets/img/card/first_website.png",
 			"logo": "#",
-			"categories": ["Personal", "AI"]
+			"categories": ["Personal", "school"]
 		}
 	]
 }
